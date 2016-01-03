@@ -1,0 +1,47 @@
+///*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//IMPORTS
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+@import "normalize";
+@import "bourbon/bourbon";
+@import "neat/neat";
+@import "base";
+
+
+///*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//HEADER
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+.Roles {
+	@include shift(1);
+	@include pad(.25em 0 1em 4em);
+	ul {
+		text-align: left;
+		list-style: none;
+	}
+}
+
+.hero-inner {
+	a {
+		text-decoration: none;
+		font-size: 4em;
+	}
+}
+
+
+.hero-logo {
+	@include pad(1em 0 .5em 1em);
+	font-size: 6em;
+	font-weight: 700;
+	color: white;
+}
+
+.bullet-content {
+	h1 {
+		font-size: 1em;
+	}
+	h2 {
+		@include pad(0 0 2.5em 0);
+		text-align: left;
+		font-size: 1.5em;
+		color: grey;
+	}
+}
